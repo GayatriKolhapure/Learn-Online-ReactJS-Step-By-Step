@@ -1,5 +1,7 @@
 import "./App.css";
 import Header from "./Header";
+import Component, {SecComponent} from "./Components";
+
 function App() {
   return (
     <>
@@ -14,6 +16,10 @@ function App() {
           <li>App.jsx</li>
         </h3>
       </ul>
+
+      <Component/>
+      <SecComponent/>
+      {/* <sum/> */}
     </>
   );
 }
