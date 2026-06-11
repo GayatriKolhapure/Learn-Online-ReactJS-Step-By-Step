@@ -1,6 +1,8 @@
 import "./App.css";
 import Header from "./Header";
 import Component, {SecComponent} from "./Components";
+import JsxComponent from "./JsxComponent";
+import WithoutJsxComponent from "./WithoutjsxComponent";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
 
       <Component/>
       <SecComponent/>
+
+      <JsxComponent/>
+      <WithoutJsxComponent/>
       {/* <sum/> */}
     </>
   );
