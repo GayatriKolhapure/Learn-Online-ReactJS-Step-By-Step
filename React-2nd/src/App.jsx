@@ -1,11 +1,13 @@
 import './App.css'
-import Task from './Task1.jsx'
+import Task1 from './Task1.jsx'
+import TaskSec from './Task2.jsx'
 
 function App() {
 
   return (
     <>
-    <Task/>
+    {/* <Task1/> */}
+    <TaskSec/>
     </>
   )
 }
