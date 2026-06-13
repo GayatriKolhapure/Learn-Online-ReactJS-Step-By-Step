@@ -4,6 +4,8 @@ import TaskSec from './Task2.jsx'
 import TaskThree from './Task3.jsx'
 import TaskFourState from './Task4State.jsx'
 import TaskFive from './task5.jsx'
+import TaskSix from './Task6.jsx'
+
 function App() {
 
   return (
@@ -12,7 +14,8 @@ function App() {
     {/* <TaskSec/> */}
     {/* <TaskThree/> */}
     {/* <TaskFourState/> */}
-    <TaskFive/>
+    {/* <TaskFive/> */}
+    <TaskSix/>
     </>
   )
 }
