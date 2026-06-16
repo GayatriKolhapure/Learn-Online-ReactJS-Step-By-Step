@@ -9,8 +9,7 @@ function TaskHelper(){
             <select
             style={{padding:'10px', color}}
             onChange={(event)=>setColor(event.target.value)
-            }
-            >
+            }>
                 <option  value={"red"}>Red</option>
                 <option  value={"White"}>White</option>
                 <option  value={"green"}>Green</option>

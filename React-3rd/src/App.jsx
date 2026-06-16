@@ -8,6 +8,7 @@ import Task1 from './Task1'
 import Loops from './Loops'
 import Clock from './Clock'
 import TaskHelper from './Task2Helper'
+import TaskThree from './Task3'
 
 function App() {
   
@@ -20,7 +21,8 @@ function App() {
      {/* <HandleCheckBox /> */}
      {/* <HandleRadioBtn /> */}
      {/* <Loops /> */}
-     <TaskHelper />
+     {/* <TaskHelper /> */}
+     <TaskThree />
     </>
   )
 }
