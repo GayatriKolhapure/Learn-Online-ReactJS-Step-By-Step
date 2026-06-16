@@ -5,6 +5,7 @@ import First from './first'
 import HandleCheckBox from './HandleCheckBox'
 import HandleRadioBtn from './HandleRadioBtn'
 import Task1 from './Task1'
+import Loops from './Loops'
 
 function App() {
   
@@ -15,7 +16,8 @@ function App() {
      {/* <Task1 /> */}
      {/* <ControlledInp/> */}
      {/* <HandleCheckBox /> */}
-     <HandleRadioBtn />
+     {/* <HandleRadioBtn /> */}
+     <Loops />
     </>
   )
 }
