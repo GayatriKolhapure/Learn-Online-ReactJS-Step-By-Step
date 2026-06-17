@@ -1,3 +1,4 @@
+import DynamicCss from './DynamicCss';
 import FirstUseEffect from './FirstUseEffect'
 import InlineStyle from './InlineStyle';
 import SecUseEffect from './SecUseEffect';
@@ -13,7 +14,8 @@ function App() {
      {/* <FirstUseEffect /> */}
      {/* <SecUseEffect/> */}
      {/* <ThirdUseEffect /> */}
-     <InlineStyle />
+     {/* <InlineStyle /> */}
+     <DynamicCss />
     </>
   )
 }
