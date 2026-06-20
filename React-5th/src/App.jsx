@@ -4,6 +4,11 @@ import ParentToChildCall from './ParentToChildCall'
 import ForwardRef from './ForwardRef.jsx'
 import UseFormStatus from './UseFormStatus.jsx'
 import UseTransitionHook from './UseTransitionHook.jsx'
+import PureComp from './ImpureAndPureComp.jsx'
+import DerivedState from './DerivedState.jsx'
+import LiftingStateUp from './LiftingStateUp.jsx'
+import UpdatingObj from './UpdatingObjects.jsx'
+import UpdateArr from './UpdateArray.jsx'
 
 function App() {
 
@@ -15,7 +20,12 @@ function App() {
      {/* <ParentToChildCall /> */}
      {/* <ForwardRef /> */}
      {/* <UseFormStatus /> */}
-     <UseTransitionHook />
+     {/* <UseTransitionHook /> */}
+     {/* <PureComp /> */}
+     {/* <DerivedState /> */}
+     {/* <LiftingStateUp /> */}
+     {/* <UpdatingObj /> */}
+     <UpdateArr />
     </>
   )
 }
