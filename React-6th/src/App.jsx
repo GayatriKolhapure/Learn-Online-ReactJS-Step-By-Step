@@ -4,6 +4,7 @@ import FragmentElem from './FragmentElem'
 import ContextApiComp from './ContextApi/ContextApiComp'
 import CustomHook from './CustomHook'
 import RouterReact from './React Router/RouterReact'
+import HeaderRouter from './HeaderUsingRouter/HeaderRouter'
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
     {/* <FragmentElem /> */}
     {/* <ContextApiComp /> */}
     {/* <CustomHook /> */}
-    <RouterReact />
+    {/* <RouterReact /> */}
+    <HeaderRouter />
     
     </>
   )
