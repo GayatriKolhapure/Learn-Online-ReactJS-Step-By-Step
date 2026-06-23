@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import "./header.css";
-import Home from './Home'
 
 function Navbar() {
   return (
@@ -18,13 +17,13 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className="link" to={"/about"}>
+            <Link className="link" to="/about">
               About
             </Link>
           </li>
 
           <li>
-            <Link className="link" to={"/login"}>
+            <Link className="link" to={"./login"}>
               Login
             </Link>
           </li>
