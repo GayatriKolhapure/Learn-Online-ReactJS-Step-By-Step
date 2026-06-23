@@ -1,14 +1,20 @@
+import { Link } from "react-router";
+
 function PageNotFound() {
   return (
-    <div
-      style={{
-        textAlign: "center",
-        marginTop: "100px",
-      }}
-    >
-      <h1>404</h1>
-      <h2>Page Not Found</h2>
-      <p>Sorry, the page you are looking for does not exist.</p>
+    <div className="not-found">
+      <div className="not-found-card">
+        <h1>404</h1>
+        <h2>Oops! Page Not Found</h2>
+        <p>
+          The page you are looking for might have been removed,
+          renamed, or is temporarily unavailable.
+        </p>
+
+        <Link to="/" className="home-btn">
+          Back to Home
+        </Link>
+      </div>
     </div>
   );
 }

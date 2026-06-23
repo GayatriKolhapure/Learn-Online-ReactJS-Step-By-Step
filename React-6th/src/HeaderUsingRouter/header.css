@@ -14,7 +14,7 @@ body{
     list-style-type: none;
     margin: auto;
     justify-content: space-around;
-    width: 200px;
+    width: 400px;
 }
 .header ul li {
     padding: 10px;
@@ -25,4 +25,91 @@ header .link h2 {
 .header .link{
     text-decoration: none;
     font-size: 20px;
+}
+.college-container {
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.college-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.college-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.college-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.college-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.college-link.active {
+  background-color: #007bff;
+  color: rgb(135, 79, 79);
+}
+.not-found {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7fc;
+  padding: 20px;
+}
+
+.not-found-card {
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.not-found-card h1 {
+  font-size: 100px;
+  color: #1976d2;
+  margin: 0;
+}
+
+.not-found-card h2 {
+  font-size: 32px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.not-found-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.home-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #1976d2;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background: #125bb5;
 }
