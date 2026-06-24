@@ -18,8 +18,9 @@ function HeaderRouter() {
       <Routes>
         <Route element={<Navbar />}>     
           <Route path="/" element={<Home />} />
-          <Route path="/users" element={<Users/>} />
-          <Route path="/userDetails/:id" element={<UserDetails/>} />
+          <Route path="/users/list?" element={<Users/>} />
+          {/* <Route path="/users/list" element={<Users/>} /> */}
+          <Route path="/userDetails/:id/:name?" element={<UserDetails/>} />
           
           
           <Route path="/about" element={<About />} />

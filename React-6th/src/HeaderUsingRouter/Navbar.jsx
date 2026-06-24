@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router";
+import { NavLink, Link, Outlet } from "react-router";
 import "./header.css";
 
 function Navbar() {
@@ -6,37 +6,43 @@ function Navbar() {
     <div>
       <div className="header">
         <div>
-          <Link className="link" to={"/"}>
+          <NavLink className="link" to={"/"}>
             <h2>Logo</h2>
-          </Link>
+          </NavLink>
         </div>
+
         <div>
           <ul>
             <li>
-              <Link className="link" to={"/"}>
+              <NavLink className="NavLink" to={"/"}>
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="link" to="/about">
+              <NavLink className="NavLink" to="/about">
                 About
-              </Link>
+              </NavLink>
             </li>
 
             <li>
-              <Link className="link" to={"./user/login"}>
+              <NavLink className="NavLink" to={"./user/login"}>
                 Login
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="link" to={"./college"}>
+              <NavLink className="link" to={"./college"}>
                 College
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="link" to={"./users"}>
+              <NavLink className="link" to={"./users"}>
                 Users
-              </Link>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="link" to={"./users/list"}>
+                List
+              </NavLink>
             </li>
           </ul>
         </div>
