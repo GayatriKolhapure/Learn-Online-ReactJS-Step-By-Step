@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+import { NavLink, Route, Routes } from "react-router";
 import JsonEx from "./JsonServerEx";
+import UserList from "./UserList";
+import UserAdd from "./UserAdd";
+import "./App.css";
 
 function App() {
   // const [usersData, setUsersData] = useState([]);
@@ -38,9 +41,20 @@ function App() {
           ))}
       </div> */}
 
+      {/* <JsonEx/> */}
+      {/* <UserList/> */}
 
+      <>
+        <nav className="navbar">
+          <NavLink to="/">List</NavLink>
+          <NavLink to="/add">Add User</NavLink>
+        </nav>
 
-      <JsonEx/>
+        <Routes>
+          <Route path="/" element={<UserList />} />
+          <Route path="/add" element={<UserAdd />} />
+        </Routes>
+      </>
     </>
   );
 }

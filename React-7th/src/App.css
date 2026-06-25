@@ -1,79 +1,110 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.title {
-  text-align: center;
-  color: #ff0b0b;
-  margin-bottom: 20px;
-}
-
-.user-container {
+.navbar {
+  width: 70%;
+  margin: 20px auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 80px;
+  border: 1px solid #bbb;
+  padding: 12px;
+  background: #fff;
 }
 
-.user-card {
-  width: 250px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #f4f4f4;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+.navbar a {
+  text-decoration: none;
+  color: #3f3d8d;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+}
+
+.user-table {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: white;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #bbb;
+  padding: 14px;
   text-align: center;
-  transition: transform 0.3s;
 }
 
-.user-card:hover {
-  transform: translateY(-5px);
+.user-table th {
+  font-size: 24px;
+  background: #fafafa;
 }
 
-.user-card h3 {
-  color: #1976d2;
-  margin-bottom: 10px;
+.user-table td {
+  font-size: 18px;
 }
 
-.user-card p {
-  color: #555;
+.user-table tbody tr:hover {
+  background: #f3f8ff;
+}
+
+.add-user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.add-user-card {
+  width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.add-user-card h1 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.add-user-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-size: 16px;
+  outline: none;
+}
+
+.add-user-card input:focus {
+  border-color: #1976d2;
+}
+
+.add-user-card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-user-card button:hover {
+  background-color: #125bb5;
 }
