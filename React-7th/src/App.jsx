@@ -3,6 +3,7 @@ import { NavLink, Route, Routes } from "react-router";
 import JsonEx from "./JsonServerEx";
 import UserList from "./UserList";
 import UserAdd from "./UserAdd";
+import EditUser from "./editUser";
 import "./App.css";
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
         <Routes>
           <Route path="/" element={<UserList />} />
           <Route path="/add" element={<UserAdd />} />
+          <Route path="/edit/:id" element={<EditUser/>}/>
         </Routes>
       </>
     </>

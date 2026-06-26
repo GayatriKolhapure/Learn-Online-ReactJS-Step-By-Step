@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+import EditUser from "./editUser";
 
 function UserList() {
   const [userData, setUserData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
@@ -10,10 +13,8 @@ function UserList() {
   }, []);
 
   const url = "http://localhost:3000/users";
-  
-  const getUserData = async () => {
-  
 
+  const getUserData = async () => {
     let response = await fetch(url);
     let data = await response.json();
 
@@ -21,18 +22,26 @@ function UserList() {
     setLoading(false);
   };
 
+
   const deleteUser = async (id) => {
     console.log(id);
-     let response = await fetch(url+"/"+id, {
-            method:'delete'
-        });
+    let response = await fetch(url + "/" + id, {
+      method: "delete",
+    });
     response = await response.json();
-    if(response){
-      alert("record deleted")
-      getUserData()
+    if (response) {
+      alert("record deleted");
+      getUserData();
     }
-   setLoading(false);
+    setLoading(false);
+  };
 
+  const editUser = async(id) => {
+    navigate("/edit/"+id);
+
+    <EditUser/>
+    
+    
   }
 
   return (
@@ -48,7 +57,7 @@ function UserList() {
               <th>Name</th>
               <th>Age</th>
               <th>Email</th>
-              <th>Action</th>
+              <th colSpan={2}>Action</th>
             </tr>
           </thead>
 
@@ -58,7 +67,12 @@ function UserList() {
                 <td>{user.name}</td>
                 <td>{user.age}</td>
                 <td>{user.email}</td>
-                <td><button onClick={()=>deleteUser(user.id)}>Delete</button></td>
+                <td>
+                  <button onClick={() => deleteUser(user.id)}>Delete</button>
+                </td>
+                <td>
+                  <button onClick={() => editUser(user.id)}>Edit</button>
+                </td>
               </tr>
             ))}
           </tbody>
